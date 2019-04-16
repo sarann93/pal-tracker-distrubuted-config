@@ -1,13 +1,13 @@
 applications:
-- name: tracker-allocations
-  path: ./applications/allocations-server/build/libs/allocations-server.jar
+- name: tracker-backlog
+  path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
-  - route: allocations-pal-sarann93.cfapps.io
+  - route: backlog-pal-psaravanajs.cfapps.io
   memory: 1G
   instances: 1
   env:
     #REGISTRATION_SERVER_ENDPOINT: https://registration-pal-sarann93.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
-  - tracker-allocations-database
+  - tracker-backlog-database
   - tracker-service-registry
