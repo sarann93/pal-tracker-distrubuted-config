@@ -7,7 +7,9 @@ applications:
   instances: 1
   env:
     #REGISTRATION_SERVER_ENDPOINT: https://registration-pal-sarann93.cfapps.io
+    MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-timesheets-database
   - tracker-service-registry
+  - tracker-circuit-breaker-dashboard

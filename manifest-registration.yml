@@ -6,6 +6,7 @@ applications:
   memory: 1G
   instances: 1
   env:
+    MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-registration-database
