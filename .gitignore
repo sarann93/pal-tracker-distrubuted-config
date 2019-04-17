@@ -7,6 +7,3 @@ build
 .DS_Store
 .env
 ci/variables.yml
-.classpath
-.project
-bin/
